@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+</head>
+<body>
+    <header>
+        <h1>Mi Sitio Web</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/agregar_categoria/">Agregar Categoría</a></li>
+                <li><a href="/agregar_producto/">Agregar Producto</a></li>
+                <li><a href="/agregar_cliente/">Agregar Cliente</a></li>
+                <li><a href="/buscar/">Buscar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contenido">
+            {% block contenido %}
+            <!-- Este es el bloque de contenido específico de cada página -->
+            {% endblock %}
+        </div>
+    </main>
+    <footer>
+        <p>Derechos de autor © 2023 Mi Sitio Web</p>
+    </footer>
+</body>
+</html>
